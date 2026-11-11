@@ -165,31 +165,6 @@ class StateVector:
         # alias for toffoli
         return self.toffoli(control1,control2,target)
 
-    def mcx(self,controls:list[int],target:int):
-        # multi-controlled X on any number of controls
-        return self.multi_controlled(StateVector.X,controls,target)
-
-    def swap(self,qubit1:int,qubit2:int):
-        self._check_qubits(qubit1,qubit2)
-
-        self.cnot(qubit1,qubit2)
-        self.cnot(qubit2,qubit1)
-        self.cnot(qubit1,qubit2)
-
-        return self
-
-    def fredkin(self,control:int,target1:int,target2:int):
-        self._check_qubits(control,target1,target2)
-
-        self.cnot(target2,target1)
-        self.toffoli(control,target1,target2)
-        self.cnot(target2,target1)
-
-        return self
-
-    def cswap(self,control:int,target1:int,target2:int):
-        return self.fredkin(control,target1,target2)
-
     def _probabilities_and_indices(self,qubit:int,outcome:int):
         if not (0<=qubit<=self.n):
             raise IndexError(f"{qubit} is out of range for range {self.n}")

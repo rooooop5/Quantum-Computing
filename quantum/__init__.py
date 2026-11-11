@@ -10,6 +10,6 @@ __all__ = [
     "Qubit", "ClassicalBit", "Register",
     "QuantumRegister", "ClassicalRegister",
     "QuantumCircuit",
-    "Result", "Job", "Simulator", "AerSimulator",
+    "Result", "Job", "Simulator",
     "Basis", "StateVector",
 ]
