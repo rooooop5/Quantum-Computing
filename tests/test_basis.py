@@ -2,7 +2,7 @@
 
 import pytest
 
-from backends.basis import Basis
+from quantum import Basis
 
 
 def test_default_state():

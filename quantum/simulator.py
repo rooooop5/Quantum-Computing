@@ -1,6 +1,6 @@
-from circuits import QuantumCircuit
-from backends.statevector import StateVector
-from backends.basis import Basis
+from .circuits import QuantumCircuit
+from .backends.statevector import StateVector
+from .backends.basis import Basis
 
 class Result:
     def __init__(self,counts:dict):

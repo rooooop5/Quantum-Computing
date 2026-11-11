@@ -1,4 +1,4 @@
-from registers import QuantumRegister,ClassicalRegister,Qubit,Register,ClassicalBit
+from .registers import QuantumRegister,ClassicalRegister,Qubit,Register,ClassicalBit
 
 class QuantumCircuit:
 

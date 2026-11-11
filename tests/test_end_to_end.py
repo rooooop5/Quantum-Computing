@@ -2,11 +2,7 @@
 import numpy as np
 import pytest
 
-from circuits import QuantumCircuit
-from registers import QuantumRegister, ClassicalRegister
-from simulator import Simulator
-from backends.basis import Basis
-from backends.statevector import StateVector
+from quantum import QuantumCircuit, QuantumRegister, ClassicalRegister,Simulator, Basis, StateVector
 
 
 def run(circuit, method="matrix_product_state", shots=1):

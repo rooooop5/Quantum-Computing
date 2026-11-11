@@ -1,7 +1,6 @@
 """Tests for the QuantumCircuit recorder (Qiskit argument order)."""
 
-from registers import QuantumRegister, ClassicalRegister
-from circuits import QuantumCircuit
+from quantum import QuantumRegister, ClassicalRegister,QuantumCircuit
 
 
 def make():

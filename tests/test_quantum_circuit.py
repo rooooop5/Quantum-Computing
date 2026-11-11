@@ -1,5 +1,4 @@
-from registers import QuantumRegister,ClassicalRegister
-from circuits import QuantumCircuit
+from quantum import QuantumRegister,ClassicalRegister,QuantumCircuit
 
 def make():
     a = QuantumRegister(3,'a')        # qubits 0,1,2

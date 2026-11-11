@@ -3,8 +3,7 @@
 import numpy as np
 import pytest
 
-from backends.statevector import StateVector
-from backends.basis import Basis
+from quantum import StateVector,Basis
 
 
 def basis_state(n, index):
